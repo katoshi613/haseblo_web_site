@@ -1,27 +1,583 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hasebloメンバー紹介</title>
-    <link rel="icon" href="img/favicon.ico" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/common.css" />
-  </head>
-  <body>
-    <!-- ヘッダー読み込み -->
-    <header id="header" class="header"></header>
-    <!-- フッター読み込み -->
-    <footer id="footer"></footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script>
-      $(function () {
-        $("#header").load("header.html", function () {
-          $.getScript("./js/script.js", function () {});
-        });
-        $("#footer").load("footer.html");
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hasebloメンバー紹介</title>
+  <link rel="icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="members.css">
+</head>
+<body>
+  <!-- ヘッダー読み込み -->
+  <header id="header" class="header"></header>
+
+  <!-- メンバー紹介 -->
+  <!-- メンバーカード雛形
+
+  <div class="flex__members__item">
+      <div class="card__flame">
+
+      　アイコン画像
+        <div class="member__icon">
+          <img src="/member_img/icon_shouko.jpg" alt="メンバーアイコン">
+        </div>
+
+        自己紹介文
+        <div class="member__profile">
+          <p>自己紹介文を挿入します。</p>
+        </div>
+
+      </div>
+    </div>
+
+  -->
+
+
+  <br />
+  <br />
+
+  <h2>メンバー紹介</h2>
+
+
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <!-- メンバーカード一覧 -->
+  <div class="flex__container">
+
+
+    <!-- メンバーカード個人 -->
+    <div class="flex__members__item">
+      <div class="card__flame">
+
+        <!-- アイコン画像 -->
+        <div class="member__icon">
+          <img src="/member_img/icon_shouko.jpg" alt="メンバーアイコン">
+        </div>
+        <!-- 自己紹介文 -->
+        <div class="member__profile">
+          <h3><span class="marker__yg">
+              しょうこさん</span></h3>
+          <p>業務効率化の為にプログラミングを学んでいます。デザインの楽しさと難しさを体験でき良い経験になりました。</p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- メンバーカード個人 -->
+    <div class="flex__members__item">
+      <div class="card__flame">
+
+        <!-- アイコン画像 -->
+        <div class="member__icon">
+          <img src="/member_img/icon_nan(kitutuki).png" alt="メンバーアイコン">
+        </div>
+        <!-- 自己紹介文 -->
+        <div class="member__profile">
+          <h3><span class="marker__yg">
+
+            なん（キツツキ）
+
+            </span></h3>
+
+          <p>美大卒、駆け出しWebエンジニア。</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- 終わり -->
+
+
+    <!-- メンバーカード個人 -->
+    <div class="flex__members__item">
+      <div class="card__flame">
+
+        <!-- アイコン画像 -->
+        <div class="member__icon">
+          <img src="/member_img/icon_dai.png" alt="メンバーアイコン">
+        </div>
+        <!-- 自己紹介文 -->
+        <div class="member__profile">
+          <h3><span class="marker__yg">
+
+
+              だい
+
+            </span></h3>
+
+          <p>日々楽しく生きる。人と絡むの大好き。
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <!-- 終わり -->
+
+
+    <!-- メンバーカード個人 -->
+    <div class="flex__members__item">
+      <div class="card__flame">
+
+        <!-- アイコン画像 -->
+        <div class="member__icon">
+          <img src="/member_img/icon_sigetthy.JPG" alt="メンバーアイコン">
+        </div>
+        <!-- 自己紹介文 -->
+        <div class="member__profile">
+          <h3><span class="marker__yg">
+
+
+              シゲッティ
+
+            </span></h3>
+          <p>お客様に驚きと感動を与えるアラフォープログラミングサポーター。</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- 終わり -->
+
+
+    <!-- メンバーカード個人 -->
+    <div class="flex__members__item">
+      <div class="card__flame">
+
+        <!-- アイコン画像 -->
+        <div class="member__icon">
+          <img src="/member_img/icon_haruna.jpg" alt="メンバーアイコン">
+        </div>
+        <!-- 自己紹介文 -->
+        <div class="member__profile">
+          <h3><span class="marker__yg">
+
+
+            はるな
+
+
+          </span></h3>
+          <p>信頼できるパートナーとしてお付き合いできることを目指しています。</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- 終わり -->
+
+
+    <!-- メンバーカード個人 -->
+    <div class="flex__members__item">
+      <div class="card__flame">
+
+        <!-- アイコン画像 -->
+        <div class="member__icon">
+          <img src="/member_img/icon_powan.png" alt="メンバーアイコン">
+        </div>
+        <!-- 自己紹介文 -->
+        <div class="member__profile">
+          <h3><span class="marker__yg">
+
+
+            ぽわん
+
+
+          </span></h3>
+          <p>プログラミングと動画編集で新しいものを作りたい！
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <!-- 終わり -->
+
+
+    <!-- メンバーカード個人 -->
+    <div class="flex__members__item">
+      <div class="card__flame">
+
+        <!-- アイコン画像 -->
+        <div class="member__icon">
+          <img src="/member_img/icon_janki-.png" alt="メンバーアイコン">
+        </div>
+        <!-- 自己紹介文 -->
+        <div class="member__profile">
+          <h3><span class="marker__yg">
+
+
+            じゃんきー
+
+
+          </span></h3>
+          <p>人生をより豊かにするスキルを身に付けたい！
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <!-- 終わり -->
+
+
+    <!-- メンバーカード個人 -->
+    <div class="flex__members__item">
+      <div class="card__flame">
+
+        <!-- アイコン画像 -->
+        <div class="member__icon">
+          <img src="/member_img/icon_chiemaru.png" alt="メンバーアイコン">
+        </div>
+        <!-- 自己紹介文 -->
+        <div class="member__profile">
+          <h3><span class="marker__yg">
+
+
+            ちえまる
+
+
+          </span></h3>
+          <p>ワクワクすることが好き:ピカピカ:新しいことに挑戦中！</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- 終わり -->
+
+
+    <!-- メンバーカード個人 -->
+    <div class="flex__members__item">
+      <div class="card__flame">
+
+        <!-- アイコン画像 -->
+        <div class="member__icon">
+          <img src="/member_img/icon_kim.jpg" alt="メンバーアイコン">
+        </div>
+        <!-- 自己紹介文 -->
+        <div class="member__profile">
+          <h3><span class="marker__yg">
+
+
+            きむ
+
+
+          </span></h3>
+          <p>異国の地で活動する、遅咲きウェブデザイナー</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- 終わり -->
+
+
+    <!-- メンバーカード個人 -->
+    <div class="flex__members__item">
+      <div class="card__flame">
+
+        <!-- アイコン画像 -->
+        <div class="member__icon">
+          <img src="/member_img/icon_kazu.jpg" alt="メンバーアイコン">
+        </div>
+        <!-- 自己紹介文 -->
+        <div class="member__profile">
+          <h3><span class="marker__yg">
+
+
+            かず
+
+
+          </span></h3>
+          <p>メープルの国で活動予定。プログラミング活動拡大中。</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- 終わり -->
+
+
+    <!-- メンバーカード個人 -->
+    <div class="flex__members__item">
+      <div class="card__flame">
+
+        <!-- アイコン画像 -->
+        <div class="member__icon">
+          <img src="/member_img/icon_na-chan.jpg" alt="メンバーアイコン">
+        </div>
+        <!-- 自己紹介文 -->
+        <div class="member__profile">
+          <h3><span class="marker__yg">
+
+
+            なーちゃん
+
+
+          </span></h3>
+          <p>未経験から理想の生活目指してプログラミング学習中</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- 終わり -->
+
+    <!-- メンバーカード個人 -->
+    <div class="flex__members__item">
+      <div class="card__flame">
+
+        <!-- アイコン画像 -->
+        <div class="member__icon">
+          <img src="/member_img/icon_yoshi.png" alt="メンバーアイコン">
+        </div>
+        <!-- 自己紹介文 -->
+        <div class="member__profile">
+          <h3><span class="marker__yg">
+
+
+            よし
+
+          </span></h3>
+          <p>日々の積み重ねを大切にし、より良いものを作っていきたいと考えてます！</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- 終わり -->
+
+
+    <!-- メンバーカード個人 -->
+    <div class="flex__members__item">
+      <div class="card__flame">
+
+        <!-- アイコン画像 -->
+        <div class="member__icon">
+          <img src="/member_img/icon_shouko.jpg" alt="メンバーアイコン">
+        </div>
+        <!-- 自己紹介文 -->
+        <div class="member__profile">
+          <h3><span class="marker__yg">
+
+
+            しょうこさん
+
+
+          </span></h3>
+          <p>自己紹介文を挿入します。</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- 終わり -->
+
+
+    <!-- メンバーカード個人 -->
+    <div class="flex__members__item">
+      <div class="card__flame">
+
+        <!-- アイコン画像 -->
+        <div class="member__icon">
+          <img src="/member_img/icon_shouko.jpg" alt="メンバーアイコン">
+        </div>
+        <!-- 自己紹介文 -->
+        <div class="member__profile">
+          <h3><span class="marker__yg">
+
+
+            しょうこさん
+
+
+          </span></h3>
+          <p>自己紹介文を挿入します。</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- 終わり -->
+
+
+    <!-- メンバーカード個人 -->
+    <div class="flex__members__item">
+      <div class="card__flame">
+
+        <!-- アイコン画像 -->
+        <div class="member__icon">
+          <img src="/member_img/icon_shouko.jpg" alt="メンバーアイコン">
+        </div>
+        <!-- 自己紹介文 -->
+        <div class="member__profile">
+          <h3><span class="marker__yg">
+
+
+            しょうこさん
+
+
+          </span></h3>
+          <p>自己紹介文を挿入します。</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- 終わり -->
+
+
+    <!-- メンバーカード個人 -->
+    <div class="flex__members__item">
+      <div class="card__flame">
+
+        <!-- アイコン画像 -->
+        <div class="member__icon">
+          <img src="/member_img/icon_shouko.jpg" alt="メンバーアイコン">
+        </div>
+        <!-- 自己紹介文 -->
+        <div class="member__profile">
+          <h3><span class="marker__yg">
+
+
+            しょうこさん
+
+
+          </span></h3>
+          <p>自己紹介文を挿入します。</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- 終わり -->
+
+
+    <!-- メンバーカード個人 -->
+    <div class="flex__members__item">
+      <div class="card__flame">
+
+        <!-- アイコン画像 -->
+        <div class="member__icon">
+          <img src="/member_img/icon_shouko.jpg" alt="メンバーアイコン">
+        </div>
+        <!-- 自己紹介文 -->
+        <div class="member__profile">
+          <h3><span class="marker__yg">
+
+
+            しょうこさん
+
+
+          </span></h3>
+          <p>自己紹介文を挿入します。</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- 終わり -->
+
+
+    <!-- メンバーカード個人 -->
+    <div class="flex__members__item">
+      <div class="card__flame">
+
+        <!-- アイコン画像 -->
+        <div class="member__icon">
+          <img src="/member_img/icon_shouko.jpg" alt="メンバーアイコン">
+        </div>
+        <!-- 自己紹介文 -->
+        <div class="member__profile">
+          <h3><span class="marker__yg">
+
+
+            しょうこさん
+
+
+          </span></h3>
+          <p>自己紹介文を挿入します。</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- 終わり -->
+
+
+
+    <!-- メンバーカード個人 -->
+    <div class="flex__members__item">
+      <div class="card__flame">
+
+        <!-- アイコン画像 -->
+        <div class="member__icon">
+          <img src="/member_img/icon_shouko.jpg" alt="メンバーアイコン">
+        </div>
+        <!-- 自己紹介文 -->
+        <div class="member__profile">
+          <h3><span class="marker__yg">
+
+
+            しょうこさん
+
+
+          </span></h3>
+          <p>自己紹介文を挿入します。</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- 終わり -->
+
+
+
+    <!-- メンバーカード個人 -->
+    <div class="flex__members__item">
+      <div class="card__flame">
+
+        <!-- アイコン画像 -->
+        <div class="member__icon">
+          <img src="/member_img/icon_shouko.jpg" alt="メンバーアイコン">
+        </div>
+        <!-- 自己紹介文 -->
+        <div class="member__profile">
+          <h3><span class="marker__yg">
+
+
+            しょうこさん
+
+
+          </span></h3>
+          <p>自己紹介文を挿入します。</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- 終わり -->
+
+
+  </div>
+
+
+
+
+  <!-- メンバー紹介　終 -->
+
+  <!-- サロンメンバー　合計人数 -->
+  </br>
+  </br>
+
+  <div class="member__total">
+    <p>サロンメンバー000人（2020/06/01現在）</p>
+  </div>
+
+  </br>
+  </br>
+
+
+
+
+
+  <!-- フッター読み込み -->
+  <footer id="footer"></footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script>
+    $(function () {
+      $("#header").load("header.html", function () {
+        $.getScript("./js/script.js", function () { });
       });
-    </script>
-  </body>
+      $("#footer").load("footer.html");
+    });
+  </script>
+</body>
 </html>

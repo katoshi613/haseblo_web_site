@@ -1,0 +1,137 @@
+
+/* body背景画像部分 */
+body {
+  background-attachment: fixed;
+  background-image: url(/member_img/bk_keyboard.png);
+  background-position: center;
+  position: relative;
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 40px;
+  background-color: #000;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+
+
+/* タイトル　メンバー紹介 */
+h2 {
+  padding:15px 0 15px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #000;
+}
+
+/* タイトル　メンバー紹介　終 */
+
+
+/* メイン　メンバー紹介カード一覧 */
+
+div.flex__container {
+  width: 100%;
+  max-width: 1366px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 70px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+div.flex__members__item {
+  width: 25%;
+  height: 500px;
+}
+
+div.card__flame {
+  width: 95%;
+  height: 95%;
+  margin: 0 auto;
+
+
+
+}
+/* メンバーアイコン画像 */
+
+div.member__icon {
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+div.member__icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  height:100%;
+}
+
+/* メンバー自己紹介文 */
+div.member__profile {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+div.member__profile h3 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+div.member__profile span.marker__yg {
+  background: linear-gradient(transparent 70%, lime 95%);
+}
+
+div.member__profile p {
+  padding-top: 20px;
+  font-size: 14px;
+
+}
+
+/* メイン　メンバー紹介カード一覧　終 */
+
+/* メンバー　合計人数 */
+div.member__total p {
+  text-align: center;
+  font-size: 24px;
+}
+
+
+/* PC用のCSSはメディアクエリの外に記述する */
+
+@media screen and (max-width: 980px) {
+    /* 767px以下に適用されるCSS（タブレット用） */
+
+div.flex__members__item {
+  width: 50%;
+}
+
+}
+@media screen and (max-width: 480px) {
+    /* 480px以下に適用されるCSS（スマホ用） */
+
+div.flex__members__item {
+  width: 100%;
+}
+
+}
